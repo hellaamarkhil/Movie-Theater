@@ -4,7 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 10px;
     font-family: 'Saira', sans-serif;
     background: linear-gradient(to bottom, #39255c, #030506, #000000);
   
