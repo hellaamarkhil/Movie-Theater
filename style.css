@@ -1,0 +1,118 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Saira', sans-serif;
+    background: linear-gradient(to bottom, #39255c, #030506, #000000);
+  
+}
+@keyframes blinkBorder {
+    0% {
+      box-shadow: 0 0 15px 5px #39255c;
+      border: 2px solid #39255c;
+    }
+    50% {
+      box-shadow: 0 0 5px 2px #ff00ff;
+      border: 2px solid #ff00ff;
+    }
+    100% {
+      box-shadow: 0 0 15px 5px #39255c;
+      border: 2px solid #39255c;
+    }
+}
+    .box {
+        background-color: black;
+        padding: 30px;
+        text-align: center;
+        border-radius: 12px;
+        margin: 20px auto;
+        margin-top: 0px;
+        max-width: 900px;
+        height: 500px;
+      
+        /* Blinking border animation */
+        animation: blinkBorder 1s infinite;
+        
+      }
+
+video {
+        width: 100%;
+        max-width: 720px;
+        border-radius: 10px;
+        
+        margin: 15px auto 0;
+        display: block;
+      }
+      
+      
+  
+  .controls {
+    margin-top: 15px;
+  }
+button {
+    background-color: #ebe8ef;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #39255c;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .illustration {
+    text-align: center;
+    color: white;
+    max-width: 220px;
+    animation: fadeIn 2s ease;
+  }
+  
+  .illustration img {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+   
+    
+  }
+  
+  .illustration p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  @media (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .illustration {
+      margin-top: 20px;
+    }
+  
+    button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  }
+  
